@@ -1,0 +1,203 @@
+//slogan:
+Your heath our priority
+
+//logo bottom
+A hospital that lives in your pocket
+
+//colors:
+light: services, footer
+dark: name
+background color: light green
+
+//idea:
+pallavi: online doctor consultant
+sourav: nursing care services platform
+prakash: health care
+neha: medical products
+
+//features:
+1. rule-based chatbot: uses predefined responses for faqs on health, fitness and wellness.
+2. fitness & health tracker: users manually log steps, calories and workouts, system provides predefined recommendations.
+3. online doctor consultant: allows users to book doctor appointments and consultations.
+4. task & productivity tracker: Users can set reminders for workouts, water intake and daily tasks.
+5. e-commerce integration: Users can browse and buy health-realated products.
+pallavi: secod and fourth points same hai
+
+
+
+//footer:
+address
+contactno
+social media links
+
+//pages
+
+//navbar
+1. Home:
+2. aboutus: jisme hmare or nurse doctor ki sari details hogi
+3. services: isme sari information hogi ki hm ky ky Services provide kra rhe h
+4. Gallery:
+5. News:
+6. contact us:
+
+//new page
+1.fitness related
+2. doctor consultant and other health services
+3. e-com jisse medicine wagira buy kr skte health
+
+//Iske bad user jispe click krega uski sari details khulegi aise krne se sari chize organized rhegi aur site v acha lgega
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+notes:
+leading - for gap between line in a para
+whitespace - for wraping text in an element.
+line-clamp - for clamping text to a spacific number of lines (for printing spicific number of lines)
+indent - for paragram starting word indent.
+
+
+bg-color-section: bg-sky-200
+bg-color-footer:bg-sky-600
+bg-color-header: bg-blue-100
+button: bg-sky-400
+
+
+
+
+
+
+
+fitness,
+doctor consultant,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Sourav nurse facilities wale me kya kya function honge batao
+Bhai nurse wale me 
+1. Trained male and female attendant 
+2. Staff nurse for private duties 
+3. Elder patient care for home service 
+4. Nursing home service 
+I think itna bahut rahega
+
+
+
+
+
+
+
+
+
+
+
+@Prakash Kumar fitness tracker me kya kya hoga apni functionalities batao
+Bhai fitness wale me 
+1.sabse uper toh dashboar hoga jisme  steps taken, calories burned, and water intake ye status show hoga
+2.phir ek uske niche user apna workout details (exercise type, duration, calories burned). ye sab dale paye toh uske hisab se status update ho
+3.water intake ka notification show ho ek time interval par jo daily ka target de paani peene ka
+4.apna sleep hour daal sake
+in sab ke hisab se use agar ek chart ke form me status show ho uske health ka
+fitness ke details ke hisab se ek report bana sake jo doctor provide kare
+or ek AI based system jo workout or diet tips suggest kare user ke fitness details ke hisab se
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Neha Singh e-commerce me kya kya functionalities hongi batao,
+E commerce basically flipcart jaisa kuch kam krega like
+Phle hum customer ko apne products dikhayenge with price like flipcart
+Phir uske bad ik option rhega add to cart/ add to bag/ wishlist krne ka 
+Iske bad buy now ka option aayega iske badd address ka ik page khulega jisme sare address k details honge jaha pr product deliver  hogi 
+Iske bad payment mode khulegi COD/ paytm/card 
+Iske bad order placed hoga ...
+For example: jaise Hume kuch kharidna hai tho as a user mujhe kya kya show hoga, online payment support karegi website ya only cash on delivery 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Classmate Pallavi: Online consultation me user video call krega ya call ya chat?? Kya functions honge aur kya kya rakhna hai 
+aur apne according koi ui bhi suggest kr dena
+@Classmate Pallavi online consultation me kya kya hoga btana
+1. Patient Features
+
+✅ Easy Registration & Login – Sign up via email, phone number, or social media.
+✅ Doctor Search & Filters – Search by specialty, experience, fees, location, or ratings.
+✅ Book & Manage Appointments – Schedule, reschedule, or cancel appointments.
+✅ Video & Chat Consultation – Secure video calls and in-app chat with doctors.
+✅ E-Prescriptions – Doctors can provide digital prescriptions.
+✅ Medical Records & History – Store previous consultations, prescriptions, and reports.
+✅ Payment Gateway Integration – Multiple payment options (UPI, cards, wallets, insurance).
+✅ Health Monitoring – Track vitals like BP, sugar, weight, and integrate with wearables.
+✅ Emergency Consultation – 24/7 emergency doctor availability.
+✅ Multilingual Support – App in multiple languages for wider reach.
+✅ Reminders & Notifications – Appointment alerts, medication reminders.
+✅ Review & Ratings – Patients can rate and review doctors.
+
+2. Doctor Features
+
+✅ Doctor Profile & Verification – Registration with qualifications and certifications.
+✅ Appointment Management – Accept, reject, or reschedule appointments.
+✅ EHR Access – View patients' medical records (with consent).
+✅ E-Prescription & Notes – Provide prescriptions digitally.
+✅ Earnings Dashboard – Track consultation earnings and payouts.
+
+3. Admin Features
+
+✅ User & Doctor Management – Approve or verify doctors and patients.
+✅ Analytics & Reports – Track appointments, revenue, and user engagement.
+✅ Push Notifications & Announcements – Send updates to users and doctors.
