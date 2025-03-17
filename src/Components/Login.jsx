@@ -6,7 +6,7 @@ import logo2 from '../assets/png/signup_logo.png'
 import { Link } from 'react-router-dom'
 
 function Login() {
-  let brand = "PharmaEasy";
+  let brand = "Sarthi";
   return (
     <>
       <Nav />

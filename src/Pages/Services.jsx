@@ -16,15 +16,15 @@ import logo9 from '../assets/jpg/logo9.jpg'
 import logo10 from '../assets/png/logo10.png'
 
 function Services() {
-  const brandname = "PharmaEasy";
+  const brandname = "Sarthi";
 
   const location = "Noida";
   const address = "E2, Block e, sector-26";
   const state = "Uttar-Pradesh";
   const pincode = 201301;
-  const tel = 9310365061;
-  const email = "vk866797@gmail.com";
-  const emer_call = 9310365061;
+  const tel = 543245;
+  const email = "sarthi@gmail.com";
+  const emer_call = 654322234;
 
   const data1 = { img: logo1, h: 'M/F Nurse', p: 'Services can include wound care, administering medications, monitoring vital signs, providing therapies, and educating patients and families about health management.' };
   const data2 = { img: logo2, h: 'M/F Attendant', p: 'It involve trained professionals providing assistance and support to individuals, especially the elderly, with their daily activities and health needs.' };

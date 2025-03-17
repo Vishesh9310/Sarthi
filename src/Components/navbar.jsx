@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const navbar = (props) => {
     // let brand= props.brand;
-    const brand = "PharmaEasy";
+    const brand = "Sarthi";
     return (
         <nav className='inline-flex justify-between w-full px-24 h-20 bg-blue-100 text-sky-600 sticky'>
             <div className='inline-flex w-1/3 p-1'>

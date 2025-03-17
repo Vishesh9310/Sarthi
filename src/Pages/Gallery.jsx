@@ -7,7 +7,7 @@ import dir from '../assets/svg/direction_icon.svg'
 import face1 from '../assets/jpg/face_doctor.jpg'
 
 function Gallery() {
-  const brandname = "PharmaEasy";
+  const brandname = "Sarthi";
 
   return (
     <>

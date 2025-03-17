@@ -3,7 +3,7 @@ import logo from '../assets/hospital.avif'
 import { Link } from 'react-router-dom'
 
 function navbarConsultation() {
-    const brand = "PharmaEasy"
+    const brand = "Sarthi"
     return (
         <>
             <nav className='px-20 h-fit flex justify-between bg-none border-b-1 border-white'>

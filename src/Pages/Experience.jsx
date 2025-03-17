@@ -7,7 +7,7 @@ import logo1 from '../assets/jpg/logo1.jpg'
 import { Link } from 'react-router-dom'
 
 function Experience() {
-  const brandname = "PharmaEasy";
+  const brandname = "Sarthi";
   return (
     <>
       <Nav />

@@ -10,7 +10,7 @@ import Label from '../Components/label'
 import {Link} from 'react-router-dom'
 
 function Home() {
-    const brandname = "PharmaEasy";
+    const brandname = "Sarthi";
     const h1head ="Your health our priority";
     const teampic = team_pic;
     

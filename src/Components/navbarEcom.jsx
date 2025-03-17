@@ -3,7 +3,7 @@ import logo from '../assets/hospital.avif'
 import { Link } from 'react-router-dom'
 
 function navbarEcom() {
-    const brand = "PharmaEasy";
+    const brand = "Sarthi";
     return (
         <nav className='inline-flex justify-between w-full px-10 h-20 bg-blue-100 text-sky-600'>
             <Link to="/" className='inline-flex py-1 px-14'>

@@ -1,78 +1,96 @@
-import React from 'react'
-import Nav from '../Components/navbar'
-import Footer from '../Components/footer'
-import Label from '../Components/label'
-import chatbot from '../assets/jpg/chatbot.jpg'
+import React, { useState, useEffect } from 'react';
+import Nav from '../Components/navbar';
+import Footer from '../Components/footer';
+import Label from '../Components/label';
+import { Line } from 'react-chartjs-2';
+import chatbot from '../assets/jpg/chatbot.jpg';
+import 'chart.js/auto';
 
 function Tracker() {
-  const steps = 33;
-  const calories = 55;
-  const water = 1.5;
-  const date = 3455;
-  const days =5;
+  const [steps, setSteps] = useState(0);
+  const [calories, setCalories] = useState(0);
+  const [water, setWater] = useState(0);
+  const [exercise, setExercise] = useState('');
+  const [duration, setDuration] = useState('');
+  const [burned, setBurned] = useState('');
+  const [sleep, setSleep] = useState(0);
+
+  const handleWorkoutSubmit = () => {
+    setCalories(prev => prev + (parseInt(burned) || 0));
+    setSteps(prev => prev + Math.floor(Math.random() * 500 + 500));
+    resetWorkout();
+  };
+
+  const resetWorkout = () => {
+    setExercise('');
+    setDuration('');
+    setBurned('');
+  };
+
   return (
     <>
       <Nav />
-      <main className='px-24 py-10 bg-sky-200'>
-        
-        <h1 className='font-semibold text-3xl'>DashBoard</h1>
-        <section className='inline-flex w-full p-5 gap-5'>
-          <div className='w-2/3'>
 
-            <div className='inline-flex w-full gap-5'>
-              <div className='h-fit p-8 w-1/2 text-white bg-gradient-to-r to-pink-500 from-orange-400 rounded-4xl'>
-                <h1 className='font-semibold'>Total Steps</h1>
-                <h3 className='font-bold text-4xl'>{steps} steps</h3>
-                <div className='inline-flex gap-5 mt-6'>
-                  <div>
-                    <h1 className='font-semibold'>Total Water Intake</h1>
-                    <h3 className='font-bold text-4xl'>{water} ltr</h3>
-                  </div>
-                  <div>
-                    <h1 className='font-semibold'>Total Water Intake</h1>
-                    <h3 className='font-bold text-4xl'>{water} ltr</h3>
-                  </div>
-                </div>
-              </div>
+      {/* Chatbot Icon */}
+      <div className='fixed bottom-5 right-5'>
+        <img src={chatbot} alt="Chatbot" className='rounded-full h-14 cursor-pointer shadow-lg' />
+      </div>
 
-              <div className='h-fit p-8 w-1/2 text-black bg-purple-50 rounded-4xl'>
-                <h1 className='font-semibold'>Total Calories</h1>
-                <h3 className='font-bold text-4xl'>{calories} calories</h3>
-                <h1 className='font-semibold mt-6'>Total Water Intake</h1>
-                <h3 className='font-bold text-4xl'>{water} ltr</h3>
-              </div>
-
+      <section className='px-10 py-10 bg-gray-100'>
+        {/* Dashboard */}
+        <div className='bg-white p-6 rounded-lg shadow-lg text-center'>
+          <h1 className='text-2xl font-bold mb-4'>Fitness Dashboard</h1>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
+            <div className='bg-blue-500 text-white p-4 rounded-lg'>
+              <h2 className='text-lg font-semibold'>Steps Taken</h2>
+              <p className='text-2xl'>{steps}</p>
             </div>
-
-            <div className='h-fit w-full bg-purple-50 rounded-4xl p-10 my-10'>
-              <form className='w-full mr-30'>
-                <input type="text" className='w-full rounded-md outline-none bg-white p-5 my-5' placeholder='Enter Exercise type' />
-                <input type="number" className='w-full rounded-md outline-none bg-white p-5 my-5' placeholder='Enter Exercise duration' />
-                <input type="text" className='w-full rounded-md outline-none bg-white p-5 my-5' placeholder='Calories Burned' />
-                <input type="submit" className='text-center w-40 rounded-md outline-none bg-gradient-to-l to-orange-400 from-pink-500 p-2 my-5 hover:animate-pulse' />
-              </form>
+            <div className='bg-red-500 text-white p-4 rounded-lg'>
+              <h2 className='text-lg font-semibold'>Calories Burned</h2>
+              <p className='text-2xl'>{calories} kcal</p>
+            </div>
+            <div className='bg-green-500 text-white p-4 rounded-lg'>
+              <h2 className='text-lg font-semibold'>Water Intake</h2>
+              <p className='text-2xl'>{water} L</p>
+            </div>
+            <div className='bg-yellow-500 text-white p-4 rounded-lg'>
+              <h2 className='text-lg font-semibold'>Sleep Hours</h2>
+              <p className='text-2xl'>{sleep} hrs</p>
             </div>
           </div>
+        </div>
 
-          <div className='w-1/3'>
-            <div className='h-fit w-full p-8 text-black bg-purple-50 rounded-4xl'>
-              <h1 className='font-bold'>Today Date</h1>
-              <h3 className='font-bold text-4xl text-pink-500'>{date}</h3>
-            </div>
-            <div className='h-fit w-full p-8 text-black bg-purple-50 rounded-4xl my-10'>
-              <h1 className='font-bold text-2xl pb-3'>Status</h1>
-              <h3 className='font-bold text-4xl text-pink-500 bg-green-200 w-full h-fit min-h-44'>chart</h3>
-              <br />
-              <h1 className='font-bold'>Complete Days</h1>
-              <h3 className='font-bold text-4xl text-pink-500'>{days}</h3>
-            </div>
+        {/* Workout Details */}
+        <div className='bg-white p-6 mt-6 rounded-lg shadow-lg'>
+          <h2 className='text-xl font-semibold mb-3'>Workout Details</h2>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            <input type='text' placeholder='Exercise Type' value={exercise} onChange={(e) => setExercise(e.target.value)} className='border p-3 rounded' />
+            <input type='number' placeholder='Duration (min)' value={duration} onChange={(e) => setDuration(e.target.value)} className='border p-3 rounded' />
+            <input type='number' placeholder='Calories Burned' value={burned} onChange={(e) => setBurned(e.target.value)} className='border p-3 rounded' />
           </div>
-        </section>
-      </main>
+          <div className='mt-4 flex gap-4'>
+            <button onClick={handleWorkoutSubmit} className='bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition'>Update</button>
+            <button onClick={resetWorkout} className='bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition'>Reset</button>
+          </div>
+        </div>
+
+        {/* Health Progress Chart */}
+        <div className='bg-white p-6 mt-6 rounded-lg shadow-lg'>
+          <h2 className='text-xl font-semibold mb-3'>Health Progress</h2>
+          <Line data={{
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            datasets: [
+              { label: 'Steps Taken', data: [0, 0, 0, 0, 0, 0, 0], borderColor: 'blue', borderWidth: 2 },
+              { label: 'Calories Burned', data: [0, 0, 0, 0, 0, 0, 0], borderColor: 'red', borderWidth: 2 }
+            ]
+          }} />
+        </div>
+      </section>
+
       <Label />
       <Footer />
     </>
-  )
+  );
 }
 
-export default Tracker
+export default Tracker;

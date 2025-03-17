@@ -7,15 +7,15 @@ import logo1 from '../assets/jpg/logo1.jpg'
 import { Link } from 'react-router-dom'
 
 function About() {
-    const brandname = "PharmaEasy";
+    const brandname = "Sarthi";
 
     const location = "Noida";
     const address = "E2, Block e, sector-26";
     const state = "Uttar-Pradesh";
     const pincode = 201301;
-    const tel = 9310365061;
-    const email = "vk866797@gmail.com";
-    const emer_call = 9310365061;
+    const tel = 645323;
+    const email = "sarthi@gmail.com";
+    const emer_call = 34532345432;
 
     const logo = logo1;
     const star_data = [["500", "bed facility"], ["265", "Doctor"], ["633", "Trained Straff"], ["30", "Specialities"]];

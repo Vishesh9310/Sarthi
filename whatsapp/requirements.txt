@@ -1,0 +1,14 @@
+backend requirements:
+
+
+
+
+
+database:
+
+1. user login/ sign in
+2. website
+about page:
+
+(beds, doctor, trained staff, specialities, email, phone no, emergency contact no),
+()

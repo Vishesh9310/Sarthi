@@ -6,8 +6,8 @@ import linkedin from '../assets/svg/LinkedIn-Icon-Logo.wine.svg'
 import { Link } from 'react-router-dom'
 
 function footer() {
-    const contactno = 9310365061;
-    const email = "vk866797@gamil.com";
+    const contactno = 1234565432;
+    const email = "sarthi@gmail.com";
     return (
         <footer className='h-fit content-center w-full text-white bg-sky-600'>
             <div className='h-fit px-60 pt-10 pb-6 gap-10 inline-flex content-center w-full text-white'>
