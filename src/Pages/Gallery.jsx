@@ -13,7 +13,7 @@ function Gallery() {
     <>
       <Nav/>
 
-      <section className='bg-[url(C:\Users\Chauh\007\src\assets\jpg\hospital3.jpg)] bg-cover h-fit'>
+      <section className='bg-[url(C:\Users\Chauh\Sarthi\src\assets\jpg\hospital3.jpg)] bg-cover h-fit'>
         <div className='p-14 text-white'>
           <h1 className='text-2xl font-bold pb-3'>{brandname}</h1>
           <div className='inline-flex gap-2 text-lg pb-3'><img src={clock} alt="" /><p>Open 24/7</p></div>

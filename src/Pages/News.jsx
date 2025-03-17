@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from '../Components/navbar'
 import Label from '../Components/label'
 import Footer from '../Components/footer'
-import logo1 from '../assets/jpg/logo1.jpg'
+import logo1 from '../assets/jpg/consultant2.jpg'
 import { Link } from 'react-router-dom'
 
 function News() {
@@ -46,7 +46,7 @@ function News() {
         </div>
 
         <div className='px-24 py-18'>
-          <h3 className='text-center w-full font-bold text-6xl text-sky-500 mb-10'>&lt;&lt; Latest News &gt;&gt;</h3>
+          <h3 className='text-center w-full font-bold text-6xl text-sky-500 mb-10'>Latest News</h3>
           <div className='grid grid-cols-4 w-full gap-8'>
             <div className='rounded-tl-4xl rounded-br-4xl bg-sky-300 pb-5 h-fit hover:bg-sky-400'>
               <img src={logo1} alt="" className='h-16 rounded-tl-4xl' />
@@ -71,7 +71,7 @@ function News() {
           </div>
         </div>
 
-        <div className='bg-green-100 p-24 w-full inline-flex'>
+        <div className='bg-sky-300 shadow-2xl shadow-sky-700 p-24 w-fit rounded-4xl mx-10 mb-20 inline-flex'>
           <div className='w-1/2 px-10'>
             <h3 className='font-bolder text-4xl pb-5'>Get the insights you need to worry less & grow more</h3>
             <img src={logo1} alt="" className='w-full h-80' />
@@ -93,14 +93,14 @@ function News() {
           </div>
         </div>
 
-        <div className='text-center w-full py-10 px-24 flex justify-center'>
+        <div className='text-center w-full mt-20 py-10 px-24 flex justify-center'>
           <div className='w-2/5'>
             <h3 className='font-bold text-3xl px-28 pb-5'>Customer service is our main focus</h3>
             <p >62 following. This account is private. Already follow sayme_vishesh? Switch to the app or log in to see their photos and videos. Switch to the App.</p>
             <p className='font-bolder text-lg mt-16 mb-5'>62 following. This account is private. Already follow sayme_vishesh? Switch to the app or log in to see their photos and videos. Switch to the App.</p>
             <div className='inline-flex'>
               <img src={logo1} className="rounded-[100%] h-10 w-10" alt="" />
-              <p><span className='font-bold'>Vishesh</span> <br />software developer</p>
+              <p><span className='font-bold'>Sarthi</span> <br />hello</p>
             </div>
           </div>
         </div>

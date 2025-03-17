@@ -71,10 +71,10 @@ function Consultant() {
         <article className='bg-[url(C:\Users\Chauh\Sarthi\src\assets\jpg\blue.jpg)] h-fit bg-cover mb-30'>
           <Nav />
           <div className='py-10 text-center'>
-            <h1 className='text-9xl text-purple-100 font-semibold font-sans my-10'><span className='bg-purple-500 px-4'>Refreshingly</span> easy restaurant tech</h1>
+            <h1 className='text-9xl text-purple-100 font-semibold font-sans my-10 leading-snug'>Consult with Leading Healthcare <span className='bg-blue-500'>Professionals</span></h1>
             <p className='flex justify-center pb-10 gap-5'>
-              <Link to='/signup' className='py-2 font-bold hover:text-purple-500 hover:border-purple-500 hover:bg-purple-200 text-white px-10 bg-none border-2 border-white rounded-4xl w-50 content-center'>Registration</Link>
-              <Link to='/login' className='py-2 font-bold text-none px-10 hover:text-purple-500 hover:border-purple-500 hover:bg-purple-200 bg-white border-2 border-white rounded-4xl w-50 content-center'>Login</Link>
+              <Link to='/signup' className='py-2 font-bold hover:text-blue-500 hover:border-blue-500 hover:bg-blue-200 text-white px-10 bg-none border-2 border-white rounded-4xl w-50 content-center'>Registration</Link>
+              <Link to='/login' className='py-2 font-bold text-none px-10 hover:text-blue-500 hover:border-blue-500 hover:bg-blue-200 bg-white border-2 border-white rounded-4xl w-50 content-center'>Login</Link>
             </p>
           </div>
 
@@ -98,7 +98,7 @@ function Consultant() {
             </div>
           </div>
 
-          <div className='inline-flex gap-5 px-24 mt-6 mb-10 w-full'>
+          <div className='inline-flex gap-5 px-24 mt-6 mb-20 w-full'>
             <div className='w-1/3 bg-purple-100 rounded-4xl'>
               <h3 className='text-lg font-bold p-5 w-2/3'>Subscribe and get maximum discount 90% off</h3>
               <div className='flex justify-between px-10 items-center'>
@@ -115,9 +115,8 @@ function Consultant() {
             </div>
             <div className='w-1/3 bg-purple-100 rounded-4xl p-5'>
               <h3 className='text-lg font-bold w-2/3 mb-10'>Subscribe and get maximum discount 90% off</h3>
-              <input type="email" className='w-full h-10 rounded-4xl py-2 px-5 bg-white text-gray-300 mb-10 outline-none' placeholder='Your email address' />
+              <input type="email" className='w-full h-10 rounded-4xl py-2 px-5 bg-white text-black-300 mb-10 outline-none' placeholder='Your email address' />
               <Link to='/signup' className='py-2 font-bold hover:animate-pulse text-white px-10 bg-black border-2 border-black rounded-4xl w-50 content-center'>Subscribe</Link>
-
             </div>
           </div>
 
@@ -125,7 +124,7 @@ function Consultant() {
 
           {/* Book & Manage Appointments */}
           <div className="h-fit bg-sky-200 p-8">
-            <div className="max-w-4xl mx-auto bg-sky-100 p-6 rounded-lg shadow-md">
+            <div className="max-w-4xl mx-auto bg-sky-100 p-6 rounded-lg shadow-2xl mb-10 shadow-sky-300">
               <h1 className="text-3xl font-bold text-center mb-6">Appointment Booking</h1>
               {!isBooking ? (
                 <>
@@ -148,7 +147,7 @@ function Consultant() {
 
           {/* E-Precriptions */}
           <div className="App min-h-fit py-20 bg-sky-200 p-8">
-            <div className="max-w-4xl mx-auto bg-purple-50 rounded-4xl p-6 shadow-md">
+            <div className="max-w-4xl mx-auto bg-purple-50 rounded-4xl p-6 shadow-2xl shadow-purple-200">
               {/* <PrescriptionForm onAddPrescription={handleAddPrescription} /*/}
               <h1 className="text-2xl font-semibold mb-4">Create a Prescription</h1>
               <div className='h-fit w-full p-10 my-10'>
@@ -185,48 +184,8 @@ function Consultant() {
           {/* Reminders & Notifications */}
           {/* Review & Ratings */}
 
-
-
-
-
-        <section className='bg-none h-fit flex'>
-          <aside className=' w-fit bg-gray-100 shadow-2xl shadow-gray-400 py-5 pl-14 pr-1'>
-            <h1 className='font-bold pt-5 pb-2'> Patient Features</h1>
-            <ul>
-              <li>Doctor Search & Filters</li>
-              <li>Book & Manage Appointments</li>
-              <li>Video Chat Consultation</li>
-              <li>E-Prscriptions</li>
-              <li>Medical Reacords & History</li>
-              <li>Payment Gateway Integration</li>
-              <li>Health Monitoring</li>
-              <li>Emergency Consultation</li>
-              <li>Multilingual Support</li>
-              <li>Reminders & Notifications</li>
-              <li>Review & Ratings</li>
-            </ul>
-            <h1 className='font-bold pt-5 pb-2'>Doctor Features</h1>
-            <ul>
-              <li>Doctor Profile & Verigication</li>
-              <li>Appintment Mangement</li>
-              <li>EHR Access</li>
-              <li>E-prescription & Notes</li>
-              <li>Earnings Dashboard</li>
-            </ul>
-            <h1 className='font-bold pt-5 pb-2'> Admin Features</h1>
-            <ul>
-              <li>User & Doctor Management</li>
-              <li>Analytics & Reports</li>
-              <li>Push Notifications & Annocements</li>
-            </ul>
-          </aside>
-
-          <article className='p-10'>
-            article
-          </article>
-        </section>
-
         <Label />
+        
       </main >
 
       <Footer />
@@ -240,81 +199,82 @@ export default Consultant
 
 
 
-          // {/* E-Precriptions */}
-          // <div className="App min-h-fit py-20 bg-sky-200 p-8">
-          //   <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
-          //     <h1 className="text-3xl font-bold text-center mb-6">E-Prescriptions</h1>
-          //     {/* <PrescriptionForm onAddPrescription={handleAddPrescription} /*/}
-          //     <div>
-          //       <h2 className="text-xl font-semibold mb-4">Create a Prescription</h2>
-                
-          //       <form onSubmit={handleSubmit} className="space-y-4">
-          //         <div>
-          //           <label className="block text-gray-700" >Patient Name</label>
-          //           <input
-          //             type="text"
-          //             className="w-full px-4 py-2 border rounded-lg mt-1"
-          //             value={patientName}
-          //             onChange={(e) => setPatientName(e.target.value)}
-          //             required
-          //           />
-          //         </div>
-                  
-          //         <div>
-          //           <label className="block text-gray-700">Medication</label>
-          //           <input
-          //             type="text"
-          //             className="w-full px-4 py-2 border rounded-lg mt-1"
-          //             value={medication}
-          //             onChange={(e) => setMedication(e.target.value)}
-          //             required
-          //           />
-          //         </div>
 
-          //         <div>
-          //           <label className="block text-gray-700">Dosage</label>
-          //           <input
-          //             type="text"
-          //             className="w-full px-4 py-2 border rounded-lg mt-1"
-          //             value={dosage}
-          //             onChange={(e) => setDosage(e.target.value)}
-          //             required
-          //           />
-          //         </div>
+      
+// {/* E-Precriptions */}
+// <div className="App min-h-fit py-20 bg-sky-200 p-8">
+//     <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+//       <h1 className="text-3xl font-bold text-center mb-6">E-Prescriptions</h1>
+//       {/* <PrescriptionForm onAddPrescription={handleAddPrescription} /*/}
+//       <div>
+//         <h2 className="text-xl font-semibold mb-4">Create a Prescription</h2>
+        
+//         <form onSubmit={handleSubmit} className="space-y-4">
+//           <div>
+//             <label className="block text-gray-700" >Patient Name</label>
+//             <input
+//               type="text"
+//               className="w-full px-4 py-2 border rounded-lg mt-1"
+//               value={patientName}
+//               onChange={(e) => setPatientName(e.target.value)}
+//               required
+//             />
+//           </div>
+          
+//           <div>
+//             <label className="block text-gray-700">Medication</label>
+//             <input
+//               type="text"
+//               className="w-full px-4 py-2 border rounded-lg mt-1"
+//               value={medication}
+//               onChange={(e) => setMedication(e.target.value)}
+//               required
+//             />
+//           </div>
 
-          //         <div>
-          //           <label className="block text-gray-700">Duration</label>
-          //           <input
-          //             type="text"
-          //             className="w-full px-4 py-2 border rounded-lg mt-1"
-          //             value={duration}
-          //             onChange={(e) => setDuration(e.target.value)}
-          //             required
-          //           />
-          //         </div>
+//           <div>
+//             <label className="block text-gray-700">Dosage</label>
+//             <input
+//               type="text"
+//               className="w-full px-4 py-2 border rounded-lg mt-1"
+//               value={dosage}
+//               onChange={(e) => setDosage(e.target.value)}
+//               required
+//             />
+//           </div>
 
-          //         <button
-          //           type="submit"
-          //           className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 mt-4"
-          //         >
-          //           Generate Prescription
-          //         </button>
-          //       </form>
-          //     </div>
-          //     {/* <PrescriptionList prescriptions={prescriptions} /> */}
+//           <div>
+//             <label className="block text-gray-700">Duration</label>
+//             <input
+//               type="text"
+//               className="w-full px-4 py-2 border rounded-lg mt-1"
+//               value={duration}
+//               onChange={(e) => setDuration(e.target.value)}
+//               required
+//             />
+//           </div>
 
-          //     <div className="mt-6">
-          //       <h2 className="text-xl font-semibold">Prescription List</h2>
-          //       {prescriptions.length === 0 ? (
-          //         <p className="text-gray-500 mt-2">No prescriptions available.</p>
-          //       ) : (
-          //         <div className="space-y-4 mt-4">
-          //           {prescriptions.map((prescription) => (
-          //             <PrescriptionCard key={prescription.id} prescription={prescription} />
-          //           ))}
-          //         </div>
-          //       )}
-          //     </div>
-          //   </div>
-          // </div>
-          // */
+//           <button
+//             type="submit"
+//             className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 mt-4"
+//           >
+//             Generate Prescription
+//           </button>
+//         </form>
+//       </div>
+//       {/* <PrescriptionList prescriptions={prescriptions} /> */}
+
+//       <div className="mt-6">
+//         <h2 className="text-xl font-semibold">Prescription List</h2>
+//         {prescriptions.length === 0 ? (
+//           <p className="text-gray-500 mt-2">No prescriptions available.</p>
+//         ) : (
+//           <div className="space-y-4 mt-4">
+//             {prescriptions.map((prescription) => (
+//               <PrescriptionCard key={prescription.id} prescription={prescription} />
+//             ))}
+//           </div>
+//         )}
+//       </div>
+//     </div>
+//   </div>

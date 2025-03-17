@@ -7,6 +7,10 @@ import logo6 from '../assets/jpg/logo6.jpg'
 import cart from '../assets/png/cart.png'
 import pharma1 from '../assets/jpg/pharma1.jpg'
 import Ecom_card from '../Components/ecom_card'
+import add from '../assets/svg/icons8-plus.svg'
+import minus from '../assets/png/minus.png'
+import genuine from '../assets/jpg/genuine.jpg'
+import doorstep from '../assets/jpg/doorsteps.jpg'
 
 function Ecom() {
   const [showAnimation, setshowAnimation] = useState(true);
@@ -15,6 +19,29 @@ function Ecom() {
     setshowAnimation(false);
 
   }, 3600);
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+  const [isVisible3, setIsVisible3] = useState(false);
+  const [isVisible4, setIsVisible4] = useState(false);
+  const [isVisible5, setIsVisible5] = useState(false);
+
+  function showmore() {
+    setIsVisible(!isVisible);
+  }
+  function showmore2() {
+    setIsVisible2(!isVisible2);
+  }
+  function showmore3() {
+    setIsVisible3(!isVisible3);
+  }
+  function showmore4() {
+    setIsVisible4(!isVisible4);
+  }
+  function showmore5() {
+    setIsVisible5(!isVisible5);
+  }
+
   return (
     <>
       <Nav />
@@ -28,8 +55,8 @@ function Ecom() {
             <p className={`text-[280px] text-center font-bold animate-bounce ${showAnimation ? '' : 'animate-none'}`}>Pharmacy</p>
             <p className='w-1/4'>ONLINE MEDICINE DELIVERY IS THE PROCESS OF ORDERING MEDICATONS THROUGH A WEBSITE OR APP AND HAVING THEM DELIVERED TO YOUR DOORSTEP.</p>
             <div className='grid grid-cols-2 w-fit mt-30' >
-              <p className='flex-inline'><img src={logo6} alt="" className='h-10 rounded-[100%]' /> <span>100% Genuine Medicines</span></p>
-              <p><img src={cart} alt="" className='h-10 rounded-[100%] p-2 bg-white' /> <span>Delivery to your doorsteps</span></p>
+              <p><img src={genuine} alt="" className='h-10 w-10 p-1 rounded-[100%] bg-white' /> <span>100% Genuine Medicines</span></p>
+              <p><img src={doorstep} alt="" className='h-10 w-10 rounded-[100%] bg-white' /> <span>Delivery to your doorsteps</span></p>
             </div>
           </div>
 
@@ -235,21 +262,46 @@ function Ecom() {
 
         <div className='px-50 py-6 bg-white'>
           <h3 className='text-center text-4xl font-bold'>Got Questions?</h3>
-          <div className='bg-gray-200 p-6 my-3 rounded-2xl flex justify-between'>
+          <div className='bg-gray-200 p-6 my-3 rounded-2xl flex justify-between' onClick={() => { showmore() }}>
             <h3 className='text-lg font-semibold'>How do I start online consulation with doctors on Medicare?</h3>
+            <div onClick={showmore} className='w-fit h-fit'>
+              {isVisible ?  <img src={minus} alt="" className='self-center h-8 w-8 rounded-[100%]'/> : <img src={add} alt="" className='self-center h-8 w-8 rounded-[100%]'/>}
+           </div>
           </div>
+          {isVisible && <div className='bg-green-200 rounded-4xl p-5'>This div is now visible.</div>}
+
           <div className='bg-gray-200 p-6 my-3 rounded-2xl flex justify-between'>
             <h3 className='text-lg font-semibold'>Are your online doctors qualified?</h3>
+            <div onClick={showmore2} className='w-fit h-fit'>
+              {isVisible2 ?  <img src={minus} alt="" className='self-center h-8 w-8 rounded-[100%]'/> : <img src={add} alt="" className='self-center h-8 w-8 rounded-[100%]'/>}
+           </div>
           </div>
+          {isVisible2 && <div className='bg-green-200 rounded-4xl p-5'>hello vishesh</div>}
+          
           <div className='bg-gray-200 p-6 my-3 rounded-2xl flex justify-between'>
             <h3 className='text-lg font-semibold'>Is online doctor consultation safe and secured on Medicare?</h3>
+            <div onClick={showmore3} className='w-fit h-fit'>
+              {isVisible3 ?  <img src={minus} alt="" className='self-center h-8 w-8 rounded-[100%]'/> : <img src={add} alt="" className='self-center h-8 w-8 rounded-[100%]'/>}
+           </div>
           </div>
+          {isVisible3 && <div className='bg-green-200 rounded-4xl p-5'>This div is now visible.</div>}
+
           <div className='bg-gray-200 p-6 my-3 rounded-2xl flex justify-between'>
             <h3 className='text-lg font-semibold'>What happens if I don't get a response from a doctor?</h3>
+            <div onClick={showmore4} className='w-fit h-fit'>
+              {isVisible4 ?  <img src={minus} alt="" className='self-center h-8 w-8 rounded-[100%]'/> : <img src={add} alt="" className='self-center h-8 w-8 rounded-[100%]'/>}
+           </div>
           </div>
+          {isVisible4 && <div className='bg-green-200 rounded-4xl p-5'>This div is now visible.</div>}
+
           <div className='bg-gray-200 p-6 my-3 rounded-2xl flex justify-between'>
-            <h3 className='text-lg font-semibold'>cAn I do a free online doctor consultation on Medicare?</h3>
+            <h3 className='text-lg font-semibold'>Can I do a free online doctor consultation on Medicare?</h3>
+            <div onClick={showmore5} className='w-fit h-fit'>
+              {isVisible5 ?  <img src={minus} alt="" className='self-center h-8 w-8 rounded-[100%]'/> : <img src={add} alt="" className='self-center h-8 w-8 rounded-[100%]'/>}
+           </div>
           </div>
+          {isVisible5 && <div className='bg-green-200 rounded-4xl p-5'>This div is now visible.</div>}
+
         </div>
       </section>
 

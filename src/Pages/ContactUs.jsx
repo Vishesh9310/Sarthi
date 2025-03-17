@@ -10,7 +10,7 @@ function ContactUs() {
       <Nav/>
 
       <section className='bg-sky-200'>
-        <div className='px-24 pb-26 bg-[url(C:\Users\Chauh\007\src\assets\jpg\doctor_face2.jpg)] bg-cover'>
+        <div className='px-24 pb-26 bg-[url(C:\Users\Chauh\Sarthi\src\assets\jpg\doctor_face2.jpg)] bg-cover'>
           <div className='w-1/2 h-fit py-20 pl-40 '>
             <p className='leading-loose pt-3'>Individual approach to each patient</p>
             <p className='font-bolder text-6xl pt-2 mb-5'>Medical Service</p>
