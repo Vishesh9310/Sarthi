@@ -17,7 +17,6 @@ function Home() {
     return (
         <>
             <Nav/>
-
             <section className='bg-sky-200 h-fit pb-40'>
                 <div className='px-24 pb-26'>
                     <div className='justify-between inline-flex h-fit'>

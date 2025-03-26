@@ -46,7 +46,7 @@ function Ecom() {
     <>
       <Nav />
       <section>
-        {/* <div className='w-screen p-5'>
+        {/*<div className='w-screen p-5'>
           <img src={pharma1} alt="" className='w-full rounded-t-2xl'/>
         </div> */}
 
